@@ -39,6 +39,7 @@ body {
 
 .one {
   font-size: 4.5rem;
+  color: black;
 }
 
 .one > img {
@@ -223,14 +224,23 @@ body {
   margin: 10px 0 0;
 }
 
-.nine p {
+.nine button {
   font-size: 2rem;
   font-weight: lighter;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background-color: white;
+}
+
+.nine button:hover {
+  background-color: #edc7d4;
+  color: black;
 }
 
 #replay {
   z-index: 3;
   cursor: pointer;
+  visibility: hidden;
 }
 
 /* Media Queries */
@@ -294,7 +304,7 @@ body {
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
   }
 }
